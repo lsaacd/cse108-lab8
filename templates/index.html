@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME University</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="page-box">
+        <header id="login-header" class="login-header">
+            <h1>ACME University</h1>
+        </header>
+
+        <header id="app-header" class="app-header hidden">
+            <span id="welcome-text" class="welcome-text"></span>
+            <h1>ACME University</h1>
+            <a href="#" id="sign-out-link" class="sign-out-link">Sign out</a>
+        </header>
+
+
+        <div id="status-box" class="status-box"></div>
+
+        <section id="login-section" class="login-section">
+            <form id="login-form" class="login-form">
+                <div class="form-row">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-row">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="login-actions">
+                    <button type="submit" id="sign-in-btn" class="sign-in-btn">Sign in</button>
+                </div>
+            </form>
+        </section>
+
+        <main id="student-section" class="portal-panel hidden">
+            <div class="tabs-bar">
+                <button type="button" id="tab-my-courses" class="tab-btn active">Your Courses</button>
+                <button type="button" id="tab-add-courses" class="tab-btn">Add Courses</button>
+            </div>
+
+
+            <div class="panel-body">
+                <div id="my-courses-view">
+                    <table class="courses-table">
+                        <thead>
+                            <tr>
+                                <th>Course Name</th>
+                                <th>Teacher</th>
+                                <th>Time</th>
+                                <th>Students Enrolled</th>
+                            </tr>
+                        </thead>
+                        <tbody id="student-my-courses-body"></tbody>
+                    </table>
+                </div>
+
+                <div id="add-courses-view" class="hidden">
+                    <table class="courses-table">
+                        <thead>
+                            <tr>
+                                <th>Course Name</th>
+                                <th>Teacher</th>
+                                <th>Time</th>
+                                <th>Students Enrolled</th>
+                                <th>Add class</th>
+                            </tr>
+                        </thead>
+                        <tbody id="student-all-courses-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <main id="teacher-section" class="portal-panel hidden">
+            <div id="teacher-courses-view">
+                <div class="single-tab-bar">Your Courses</div>
+                <div class="panel-body">
+                    <table class="courses-table">
+                        <thead>
+                            <tr>
+                                <th>Course Name</th>
+                                <th>Teacher</th>
+                                <th>Time</th>
+                                <th>Students Enrolled</th>
+                            </tr>
+                        </thead>
+                        <tbody id="teacher-courses-body"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="teacher-roster-view" class="hidden">
+                <div class="roster-bar">
+                    <button type="button" id="back-to-courses-btn" class="back-btn">&#8592;</button>
+                    <span id="roster-course-title" class="roster-title"></span>
+                    <span class="roster-spacer"></span>
+                </div>
+                <div class="panel-body">
+                    <table class="courses-table roster-table">
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody id="teacher-roster-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
