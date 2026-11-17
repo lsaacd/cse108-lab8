@@ -12,19 +12,20 @@ This guide covers the live demo and code walkthrough for **CSE 108 — Lab 8 (AC
    python app.py
    ```
 2. Open your browser to `http://localhost:5000`.
-3. On first startup, `db.create_all()` creates `instance/enrollment.db` and `seed_database()` populates all users, courses, and enrollments from the lab dataset.
+3. On first startup, `db.create_all()` creates `instance/enrollment.db` and `seed_database()` populates all users, courses, and enrollments from `Enrollment example data for Lab8.xlsx`.
 
 ---
 
 ## 2. Demo Login Accounts
 
-- **Student (`Mindy Norris`):** username `mnorris`, password `password123`
+- **Student (`Mindy Norris`):** username `mnorris` (or `cnorris` from Slide 4 mockup), password `password123`
 - **Student (`Jose Santos`):** username `jsantos`, password `password123`
 - **Teacher (`Ammon Hepworth`):** username `ahepworth`, password `password123`
 - **Teacher (`Ralph Jenkins`):** username `rjenkins`, password `password123`
+- **Teacher (`Susan Walker`):** username `swalker`, password `password123`
 - **Admin:** username `admin`, password `admin123`
 
-*(All 8 students and 3 teachers from the course table use `password123`, hashed with `Flask-Bcrypt`.)*
+*(All 8 students and 3 teachers from the Excel sheet use `password123`, hashed with `Flask-Bcrypt`.)*
 
 ---
 

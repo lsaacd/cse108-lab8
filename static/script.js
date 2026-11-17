@@ -384,6 +384,10 @@ function renderRoster(students) {
             }
         });
 
+        gradeInput.addEventListener("change", function() {
+            saveGrade(activeCourseId, s.student_id, gradeInput.value);
+        });
+
         wrap.appendChild(gradeInput);
         wrap.appendChild(saveBtn);
         gradeTd.appendChild(wrap);
