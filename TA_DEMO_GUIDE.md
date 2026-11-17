@@ -6,13 +6,12 @@ This guide covers the live demo and code walkthrough for **CSE 108 — Lab 8 (AC
 
 ## 1. How to Launch the App
 
-1. Open a terminal in `lab_08`:
+1. Open a terminal in the project directory:
    ```bash
-   cd "f:\[03] EDUCATION\[01] CLASSES\CSE 108\Labs AntiG\lab_08"
-   python app.py
+   python3 app.py
    ```
 2. Open your browser to `http://localhost:5000`.
-3. On first startup, `db.create_all()` creates `instance/enrollment.db` and `seed_database()` populates all users, courses, and enrollments from `Enrollment example data for Lab8.xlsx`.
+3. On first startup, `db.create_all()` creates `instance/enrollment.db` and `seed_database()` populates the database directly from `Enrollment example data for Lab8.xlsx`.
 
 ---
 

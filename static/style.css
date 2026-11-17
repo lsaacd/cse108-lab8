@@ -1,306 +1,303 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*{
+box-sizing:border-box ;
+    margin:0;
+ padding:0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
-    padding: 30px 15px;
-    color: #222;
+body{
+   font-family: Arial , sans-serif ;
+ background-color: #f4f6f9;
+padding: 30px 15px ;
+      color: #222 ;
 }
 
-.page-box {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: #dce6f2;
-    border: 1px solid #3c64a0;
-    padding: 25px 30px 35px 30px;
-    min-height: 480px;
+
+.page-box{
+    max-width: 900px ;
+ margin: 0 auto;
+background-color: #dce6f2;
+  border: 1px solid #3c64a0;
+      padding: 25px 30px 35px 30px;
+ min-height: 480px ;
 }
 
-.login-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
 
+
+.login-header{
+ text-align: center ;
+   margin-bottom: 50px ;
+}
 .login-header h1 {
-    font-size: 28px;
-    font-weight: normal;
+     font-size: 28px;
+font-weight: normal ;
 }
+
+
 
 .app-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   display: flex;
+justify-content: space-between;
+ align-items: center;
     margin-bottom: 24px;
 }
-
-.app-header h1 {
-    font-size: 28px;
-    font-weight: normal;
+.app-header h1{
+ font-size: 28px;
+     font-weight: normal;
 }
-
 .welcome-text {
-    font-size: 16px;
-    min-width: 160px;
+  font-size: 16px ;
+min-width: 160px;
 }
 
 
-.sign-out-link {
+.sign-out-link{
     font-size: 16px;
-    color: #1f4e8c;
+ color: #1f4e8c;
     min-width: 160px;
-    text-align: right;
+text-align: right ;
 }
 
 .status-box {
-    display: none;
+   display: none;
     max-width: 760px;
-    margin: 0 auto 14px auto;
-    padding: 8px 12px;
-    border: 1px solid #999;
+margin: 0 auto 14px auto;
+  padding: 8px 12px;
+ border: 1px solid #999;
     background-color: #fff;
-    font-size: 14px;
+ font-size: 14px;
 }
 
-.status-success {
-    color: #1b5e20;
-    border-color: #81c784;
-    background-color: #e8f5e9;
+.status-success{
+   color: #1b5e20;
+border-color: #81c784;
+ background-color: #e8f5e9;
 }
 
 .status-error {
-    color: #b71c1c;
+ color: #b71c1c;
     border-color: #e57373;
-    background-color: #ffebee;
+background-color: #ffebee;
 }
 
-.login-section {
+.login-section{
     max-width: 400px;
-    margin: 0 auto;
+ margin: 0 auto;
 }
 
 .form-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+   align-items: center;
+margin-bottom: 20px;
     gap: 15px;
 }
 
-.form-row label {
+.form-row label{
     width: 90px;
-    font-size: 15px;
+ font-size: 15px;
 }
 
 .form-row input {
-    flex: 1;
-    padding: 8px 10px;
-    border: 1px solid #4472c4;
+  flex: 1;
+   padding: 8px 10px;
+border: 1px solid #4472c4;
     font-size: 15px;
-    background-color: #fff;
+ background-color: #fff;
 }
+
+
 
 .login-actions {
-    text-align: center;
-    margin-top: 28px;
+   text-align: center;
+ margin-top: 28px;
 }
 
-.sign-in-btn {
+.sign-in-btn{
     width: 240px;
-    padding: 10px 18px;
-    background-color: #4472c4;
-    color: #fff;
+ padding: 10px 18px;
+  background-color: #4472c4;
+color: #fff;
     border: 1px solid #2f528f;
-    border-radius: 6px;
+ border-radius: 6px;
     font-size: 16px;
-    cursor: pointer;
+ cursor: pointer;
 }
-
 .sign-in-btn:hover {
-    background-color: #365fa3;
+  background-color: #365fa3;
 }
 
-.portal-panel {
+
+
+.portal-panel{
     border: 1px solid #2f528f;
-    background-color: #4472c4;
+ background-color: #4472c4;
 }
 
 .tabs-bar {
-    display: flex;
+  display: flex;
 }
 
-.tab-btn {
+.tab-btn{
     flex: 1;
-    padding: 12px;
-    font-size: 16px;
-    border: none;
+ padding: 12px;
+  font-size: 16px;
+border: none;
     border-bottom: 1px solid #2f528f;
-    background-color: #b4c6e7;
+ background-color: #b4c6e7;
     color: #111;
-    cursor: pointer;
+ cursor: pointer;
 }
-
 .tab-btn.active {
     background-color: #4472c4;
-    color: #fff;
+ color: #fff;
     border-bottom: none;
 }
 
-.single-tab-bar {
-    padding: 12px;
-    text-align: center;
+.single-tab-bar{
+   padding: 12px;
+ text-align: center;
     font-size: 16px;
-    color: #fff;
+ color: #fff;
     border-bottom: 1px solid #2f528f;
 }
 
 .roster-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+   justify-content: space-between;
+align-items: center;
     padding: 10px 16px;
-    color: #fff;
+ color: #fff;
     border-bottom: 1px solid #2f528f;
 }
 
-.roster-title {
+.roster-title{
     font-size: 17px;
 }
 
 .roster-spacer {
-    width: 40px;
+  width: 40px;
 }
 
-.back-btn {
+.back-btn{
     width: 40px;
-    padding: 4px 8px;
-    background-color: #b4c6e7;
-    color: #1f4e8c;
+ padding: 4px 8px;
+  background-color: #b4c6e7;
+color: #1f4e8c;
     border: 1px solid #2f528f;
-    font-size: 16px;
+ font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
+ cursor: pointer;
 }
-
-
 .back-btn:hover {
-    background-color: #9bb4df;
+  background-color: #9bb4df;
 }
 
-.panel-body {
+.panel-body{
     padding: 40px 50px 55px 50px;
-    min-height: 310px;
+ min-height: 310px;
 }
 
 .courses-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #fff;
+  width: 100%;
+   border-collapse: collapse;
+background-color: #fff;
 }
 
-.roster-table {
+.roster-table{
     max-width: 520px;
-    margin: 0 auto;
+ margin: 0 auto;
 }
 
-.courses-table th,
-.courses-table td {
-    border: 1px solid #fff;
-    padding: 10px 12px;
-    text-align: left;
+.courses-table th , .courses-table td{
+  border: 1px solid #fff;
+   padding: 10px 12px;
+text-align: left;
     font-size: 15px;
 }
 
 .courses-table thead th {
-    background-color: #8eaadb;
-    color: #fff;
+   background-color: #8eaadb;
+color: #fff;
     font-weight: bold;
 }
 
-.courses-table tbody tr:nth-child(odd) {
+.courses-table tbody tr:nth-child(odd){
     background-color: #d9e1f2;
 }
-
 .courses-table tbody tr:nth-child(even) {
-    background-color: #edf1f8;
+  background-color: #edf1f8;
 }
 
-.course-link {
+.course-link{
     color: #1155cc;
-    text-decoration: underline;
+ text-decoration: underline;
     cursor: pointer;
 }
 
 .action-cell {
-    text-align: center;
+  text-align: center;
 }
 
-.enroll-btn {
+.enroll-btn{
     width: 30px;
-    height: 26px;
-    background-color: #4472c4;
-    color: #fff;
+ height: 26px;
+  background-color: #4472c4;
+color: #fff;
     border: 1px solid #2f528f;
-    font-size: 18px;
+ font-size: 18px;
     font-weight: bold;
-    line-height: 1;
+ line-height: 1;
     cursor: pointer;
 }
-
 .enroll-btn:hover {
-    background-color: #325aa0;
+  background-color: #325aa0;
 }
 
-.drop-btn {
+.drop-btn{
     width: 30px;
-    height: 26px;
-    background-color: #e53935;
-    color: #fff;
+ height: 26px;
+  background-color: #e53935;
+color: #fff;
     border: 1px solid #b71c1c;
-    font-size: 18px;
+ font-size: 18px;
     font-weight: bold;
-    line-height: 1;
+ line-height: 1;
     cursor: pointer;
 }
-
 .drop-btn:hover {
-    background-color: #c62828;
+  background-color: #c62828;
 }
 
-.grade-edit-wrap {
+.grade-edit-wrap{
     display: flex;
-    align-items: center;
+ align-items: center;
     gap: 8px;
 }
 
 .grade-input {
-    width: 80px;
-    padding: 4px 6px;
-    border: 1px solid #8eaadb;
+  width: 80px;
+   padding: 4px 6px;
+border: 1px solid #8eaadb;
     font-size: 14px;
-    background-color: #fff;
+ background-color: #fff;
 }
 
-.save-grade-btn {
+.save-grade-btn{
     padding: 4px 10px;
-    background-color: #4472c4;
-    color: #fff;
-    border: 1px solid #2f528f;
+ background-color: #4472c4;
+  color: #fff;
+border: 1px solid #2f528f;
     font-size: 13px;
-    cursor: pointer;
+ cursor: pointer;
 }
-
 .save-grade-btn:hover {
-    background-color: #325aa0;
+  background-color: #325aa0;
 }
 
-.empty-cell {
+.empty-cell{
     text-align: center;
-    color: #555;
+ color: #555;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
